@@ -6,7 +6,7 @@ To read more about YOLO you can visit https://pjreddie.com/darknet/yolo/
 
 You can find the different areas and its code in areas.json
 
-We use streamlit for live monitoring our system and are able to monitor the number of cars at different locations in an area
+We use streamlit (web app) for live monitoring our system and are able to monitor the number of cars at different locations in an area
 
 How to run:
 clone this repo
