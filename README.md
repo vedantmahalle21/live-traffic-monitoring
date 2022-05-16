@@ -1,6 +1,8 @@
 # Live Traffic Monitoring Around Singapore
 
-We extract near real time cctv images around singapore from https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/traffic_information/traffic-cameras.html for different area
+We extract near real time cctv images around singapore from https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/traffic_information/traffic-cameras.html for different area and detect cars in the image using YOLO V3
+
+To read more about YOLO you can visit https://pjreddie.com/darknet/yolo/
 
 You can find the different areas and its code in areas.json
 
@@ -9,9 +11,9 @@ We use streamlit for live monitoring our system and are able to monitor the numb
 How to run:
 clone this repo
 ```
-git clone https://github.com/vedantmahalle21/live-traffic-monitoring.git
+git clone https://github.com/vedantmahalle21/live-traffic-monitoring.git 
 cd live-traffic-monitoring
-wget https://pjreddie.com/media/files/yolov3.weights yolo/
+wget https://pjreddie.com/media/files/yolov3.weights yolo #download weights for yolo V3.
 pip3 install -r requirements.txt
 streamlit run main.py
 ```
