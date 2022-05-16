@@ -1,4 +1,4 @@
-#Live Traffic Monitoring Around Singapore#
+# Live Traffic Monitoring Around Singapore
 
 We extract near real time cctv images around singapore from https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/traffic_information/traffic-cameras.html for different area
 
