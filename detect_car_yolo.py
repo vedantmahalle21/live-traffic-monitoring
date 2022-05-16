@@ -6,9 +6,9 @@ import cv2
 class DetectCarYolo:
     def __init__(self):
         self.OUTPUT_FILE='predicted.jpg'
-        self.LABELS_FILE='yolo\\data\\coco.names'
-        self.CONFIG_FILE='yolo\\cfg\\yolov3.cfg'
-        self.WEIGHTS_FILE='yolo\\yolov3.weights'
+        self.LABELS_FILE='yolo/data/coco.names'
+        self.CONFIG_FILE='yolo/cfg/yolov3.cfg'
+        self.WEIGHTS_FILE='yolo/yolov3.weights'
         self.CONFIDENCE_THRESHOLD=0.3
 
     def detect_car(self, image_path):

@@ -32,7 +32,7 @@ clone this repo
 ```
 git clone https://github.com/vedantmahalle21/live-traffic-monitoring.git 
 cd live-traffic-monitoring
-wget https://pjreddie.com/media/files/yolov3.weights yolo #download weights for yolo V3.
+wget https://pjreddie.com/media/files/yolov3.weights -P yolo/ #download weights for yolo V3.
 pip3 install -r requirements.txt
 streamlit run main.py
 ```
