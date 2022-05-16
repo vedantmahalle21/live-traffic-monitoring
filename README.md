@@ -9,6 +9,7 @@ We use streamlit for live monitoring our system and are able to monitor the numb
 How to run:
 clone this repo
 ```
+git clone https://github.com/vedantmahalle21/live-traffic-monitoring.git
 wget https://pjreddie.com/media/files/yolov3.weights yolo/
 pip3 install -r requirements.txt
 streamlit run main.py
