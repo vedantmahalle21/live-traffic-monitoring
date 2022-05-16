@@ -9,7 +9,6 @@ from car_detection import DetectCar
 
 class TrafficMonitor:
     def __init__(self):
-        #st.set_page_config(layout="centered")
         self.areas_path = "areas.json"
         self.areas_dict = self.read_json(self.areas_path)
         self.img_data_path = "final_img_data.json"
@@ -81,10 +80,9 @@ class TrafficMonitor:
                                 columns=['No of cars'])
         
 
-        for image in img_data[area_value]['images']: # number of rows in your table! = 2
+        for image in img_data[area_value]['images']:
             st.write(f"Timestamp: {img_data[area_value]['images'][image]['timestamp']}")
-            cols = st.columns(3) # number of columns in each row! = 2
-            # first column of the ith row
+            cols = st.columns(3) 
             cols[0].text(img_data[area_value]['images'][image]['view'])
             cols[1].text(f"No of cars {img_data[area_value]['images'][image]['car_count']}")
             cols[2].image(img_data[area_value]['images'][image]['boxed_img_file_path'], use_column_width=True) 
@@ -93,9 +91,8 @@ class TrafficMonitor:
         img_data = self.read_json(self.img_data_path)
         st.write(f'No of cars in area {self.areas_dict[area]} is {img_data[area]["area_car_count"]}')
 
-        for image in img_data[area]['images']: # number of rows in your table! = 2
-            cols = st.columns(3) # number of columns in each row! = 2
-            # first column of the ith row
+        for image in img_data[area]['images']:
+            cols = st.columns(3)
             cols[0].text(img_data[area]['images'][image]['view'])
             cols[1].text(f"No of cars {img_data[area]['images'][image]['car_count']} <br> Timestamp: {img_data[area]['images'][image]['timestamp']}")
             cols[2].image(img_data[area]['images'][image]['boxed_img_file_path'], use_column_width=True) 
