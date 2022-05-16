@@ -54,7 +54,7 @@ class DetectCar:
             img_data[area]['images'][filename]['boxed_img_file_path'] = os.path.join(self.final_img_path, area, filename)
             
         img_data[area]['area_car_count'] = num_cars
-        print(f' <----- Number of cars in area {self.areas_dict[area]} is -->'+ str(num_cars))
+        print(f'----- Number of cars in area {self.areas_dict[area]} is --- : '+ str(num_cars))
         with open(self.final_img_data_path, "w") as f:
             json.dump(img_data, f)
 
