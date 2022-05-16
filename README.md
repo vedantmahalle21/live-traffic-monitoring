@@ -10,6 +10,7 @@ How to run:
 clone this repo
 ```
 git clone https://github.com/vedantmahalle21/live-traffic-monitoring.git
+cd live-traffic-monitoring
 wget https://pjreddie.com/media/files/yolov3.weights yolo/
 pip3 install -r requirements.txt
 streamlit run main.py
