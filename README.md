@@ -1,10 +1,29 @@
 # Live Traffic Monitoring Around Singapore
 
-We extract near real time cctv images around singapore from https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/traffic_information/traffic-cameras.html for different area and detect cars in the image using YOLO V3
+This project gives us near real time monitoring capabilities of Traffic around Singapore.
+
+We extract cctv images around singapore from https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/traffic_information/traffic-cameras.html which are update frequently (every 5 to 10 mins) for different area and then we run these images through YOLO V3 to detect cars with good accuracy
 
 To read more about YOLO you can visit https://pjreddie.com/darknet/yolo/
 
 You can find the different areas and its code in areas.json
+```json
+{
+    "sle" : "Seletar Expressway",
+    "woodlands": "Woodlands & Tuas Checkpoint",
+    "kje": "Kranji Expressway",
+    "bke": "Bukit Timah Expressway",
+    "tpe": "Tampines Expressway",
+    "kpe": "Kallang-Paya Lebar Expressway",
+    "cte": "Central Expressway",
+    "pie": "Pan-Island Expressway",
+    "ecp": "East Coast Parkway",
+    "aye": "Ayer Rajah Expressway",
+    "mce": "Marina Coastal Expressway",
+    "stg": "Sentosa Gateway"
+}
+```
+
 
 We use streamlit (web app) for live monitoring our system and are able to monitor the number of cars at different locations in an area
 
