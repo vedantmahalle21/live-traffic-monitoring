@@ -41,6 +41,8 @@ Goto http://localhost:8501
 
 wait for screen to load and click on "Run Traffic Detection System" for live run of the program and wait till it completes
 
+if you see any error on the webpage just click on "Run Traffic Detection System" button and let it run again
+
 You can see the traffic data around singapore 
 ![Alt text](static_images/traffic-monitoring-screenshot.png "Traffic Monitoring")
 
